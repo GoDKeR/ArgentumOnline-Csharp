@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteAOCS", "ClienteAOCS\ClienteAOCS\ClienteAOCS.csproj", "{B950E175-D048-48C0-903D-9D786544AB08}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ClienteAOCSContent", "ClienteAOCS\ClienteAOCSContent\ClienteAOCSContent.contentproj", "{D2AAEFB3-88F4-41F4-89D3-959458DE97B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B950E175-D048-48C0-903D-9D786544AB08}.Debug|x86.ActiveCfg = Debug|x86
+		{B950E175-D048-48C0-903D-9D786544AB08}.Debug|x86.Build.0 = Debug|x86
+		{B950E175-D048-48C0-903D-9D786544AB08}.Release|x86.ActiveCfg = Release|x86
+		{B950E175-D048-48C0-903D-9D786544AB08}.Release|x86.Build.0 = Release|x86
+		{D2AAEFB3-88F4-41F4-89D3-959458DE97B7}.Debug|x86.ActiveCfg = Debug|x86
+		{D2AAEFB3-88F4-41F4-89D3-959458DE97B7}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

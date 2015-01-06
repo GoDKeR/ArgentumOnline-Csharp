@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B950E175-D048-48C0-903D-9D786544AB08}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClienteAOCS</RootNamespace>
+    <AssemblyName>ClienteAOCS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>17a88e5a-a102-4871-b453-9b7fa1ee42b4</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="engine\Data\BodyData.cs" />
+    <Compile Include="engine\Data\FxData.cs" />
+    <Compile Include="engine\Data\GrhData.cs" />
+    <Compile Include="engine\Data\HeadData.cs" />
+    <Compile Include="engine\Data\HelmetData.cs" />
+    <Compile Include="engine\Data\ShieldData.cs" />
+    <Compile Include="engine\Data\WeaponData.cs" />
+    <Compile Include="engine\FrameCounter.cs" />
+    <Compile Include="engine\Grh.cs" />
+    <Compile Include="engine\TextureManager.cs" />
+    <Compile Include="engine\TileEngine.cs" />
+    <Compile Include="gui\BancoOBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\BancoOBJ.Designer.cs">
+      <DependentUpon>BancoOBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\CambiaMOTD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\CambiaMOTD.Designer.cs">
+      <DependentUpon>CambiaMOTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Cantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Cantidad.Designer.cs">
+      <DependentUpon>Cantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Cargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Cargando.Designer.cs">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Carp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Carp.Designer.cs">
+      <DependentUpon>Carp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\CharInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\CharInfo.Designer.cs">
+      <DependentUpon>CharInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Comerciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Comerciar.Designer.cs">
+      <DependentUpon>Comerciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\ComerciarUsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\ComerciarUsu.Designer.cs">
+      <DependentUpon>ComerciarUsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Commet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Commet.Designer.cs">
+      <DependentUpon>Commet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Connect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Connect.Designer.cs">
+      <DependentUpon>Connect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\CrearPersonaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\CrearPersonaje.Designer.cs">
+      <DependentUpon>CrearPersonaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\CustomKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\CustomKeys.Designer.cs">
+      <DependentUpon>CustomKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\EligeAlineacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\EligeAlineacion.Designer.cs">
+      <DependentUpon>EligeAlineacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Entrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Entrenador.Designer.cs">
+      <DependentUpon>Entrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Estadisticas.Designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildAdm.Designer.cs">
+      <DependentUpon>GuildAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildBrief.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildBrief.Designer.cs">
+      <DependentUpon>GuildBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildDetails.Designer.cs">
+      <DependentUpon>GuildDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildFoundation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildFoundation.Designer.cs">
+      <DependentUpon>GuildFoundation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildLeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildLeader.Designer.cs">
+      <DependentUpon>GuildLeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildMember.Designer.cs">
+      <DependentUpon>GuildMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildNews.Designer.cs">
+      <DependentUpon>GuildNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildSol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildSol.Designer.cs">
+      <DependentUpon>GuildSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\GuildUrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\GuildUrl.Designer.cs">
+      <DependentUpon>GuildUrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Herrero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Herrero.Designer.cs">
+      <DependentUpon>Herrero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Mapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Mapa.Designer.cs">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Mensaje.Designer.cs">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\MSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\MSG.Designer.cs">
+      <DependentUpon>MSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\NewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\NewPassword.Designer.cs">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Opciones.Designer.cs">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Party.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Party.Designer.cs">
+      <DependentUpon>Party.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\PeaceProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\PeaceProp.Designer.cs">
+      <DependentUpon>PeaceProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="map\Char.cs" />
+    <Compile Include="map\Map.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="game\Game1.cs" />
+    <Compile Include="protocol\ByteQueue.cs" />
+    <Compile Include="protocol\packets\ClientPacketID.cs" />
+    <Compile Include="protocol\packets\ServerPacketID.cs" />
+    <Compile Include="protocol\Protocol.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClienteAOCSContent\ClienteAOCSContent.contentproj">
+      <Name>ClienteAOCSContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="gui\BancoOBJ.resx">
+      <DependentUpon>BancoOBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\CambiaMOTD.resx">
+      <DependentUpon>CambiaMOTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Cantidad.resx">
+      <DependentUpon>Cantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Cargando.resx">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Carp.resx">
+      <DependentUpon>Carp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\CharInfo.resx">
+      <DependentUpon>CharInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Comerciar.resx">
+      <DependentUpon>Comerciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\ComerciarUsu.resx">
+      <DependentUpon>ComerciarUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Commet.resx">
+      <DependentUpon>Commet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Connect.resx">
+      <DependentUpon>Connect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\CrearPersonaje.resx">
+      <DependentUpon>CrearPersonaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\CustomKeys.resx">
+      <DependentUpon>CustomKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\EligeAlineacion.resx">
+      <DependentUpon>EligeAlineacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Entrenador.resx">
+      <DependentUpon>Entrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildAdm.resx">
+      <DependentUpon>GuildAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildBrief.resx">
+      <DependentUpon>GuildBrief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildDetails.resx">
+      <DependentUpon>GuildDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildFoundation.resx">
+      <DependentUpon>GuildFoundation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildLeader.resx">
+      <DependentUpon>GuildLeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildMember.resx">
+      <DependentUpon>GuildMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildNews.resx">
+      <DependentUpon>GuildNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildSol.resx">
+      <DependentUpon>GuildSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\GuildUrl.resx">
+      <DependentUpon>GuildUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Herrero.resx">
+      <DependentUpon>Herrero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Mapa.resx">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Mensaje.resx">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\MSG.resx">
+      <DependentUpon>MSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\NewPassword.resx">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Opciones.resx">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Party.resx">
+      <DependentUpon>Party.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\PeaceProp.resx">
+      <DependentUpon>PeaceProp.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
